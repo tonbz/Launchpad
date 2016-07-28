@@ -84,7 +84,7 @@ namespace Launchpad.Launcher.Handlers.Protocols
 
 		public override bool IsPlatformAvailable(ESystemTarget Platform)
 		{
-			string remote = $"{Config.GetBaseHTTPUrl()}/game/{Platform}/.provides";
+			string remote = $"{Config.GetBaseHTTPUrl()}/platform/{Platform}/.provides";
 
 			return DoesRemoteDirectoryOrFileExist(remote);
 		}

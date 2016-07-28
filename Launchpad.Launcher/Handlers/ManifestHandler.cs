@@ -299,7 +299,7 @@ namespace Launchpad.Launcher.Handlers
 		/// <returns>The game manifest URL.</returns>
 		public string GetGameManifestURL()
 		{
-			string manifestURL = $"{Config.GetBaseProtocolURL()}/game/{Config.GetSystemTarget()}/GameManifest.txt";
+			string manifestURL = $"{Config.GetBaseProtocolURL()}/platform/{Config.GetSystemTarget()}/GameManifest.txt";
 
 			return manifestURL;
 		}
@@ -310,7 +310,7 @@ namespace Launchpad.Launcher.Handlers
 		/// <returns>The game manifest checksum URL.</returns>
 		public string GetGameManifestChecksumURL()
 		{
-			string manifestChecksumURL = $"{Config.GetBaseProtocolURL()}/game/{Config.GetSystemTarget()}/GameManifest.checksum";
+			string manifestChecksumURL = $"{Config.GetBaseProtocolURL()}/platform/{Config.GetSystemTarget()}/GameManifest.checksum";
 
 			return manifestChecksumURL;
 		}

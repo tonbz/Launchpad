@@ -560,7 +560,7 @@ namespace Launchpad.Launcher.Handlers
 		/// <returns>The game URL.</returns>
 		public string GetGameURL()
 		{
-			return $"{GetBaseProtocolURL()}/game/{GetSystemTarget()}/bin/";
+			return $"{GetBaseProtocolURL()}/platform/{GetSystemTarget()}/bin/";
 		}
 
 		/// <summary>
@@ -991,11 +991,11 @@ namespace Launchpad.Launcher.Handlers
 			{
 				case "FTP":
 					{
-						return "ftp://directorate.asuscomm.com";
-					}
+						return "ftp://ue-web-service.com";
+                    }
 				case "HTTP":
 					{
-						return "http://directorate.asuscomm.com/launchpad";
+						return "http://ue-web-service.com/launchpad";
 					}
 				default:
 					{

@@ -606,5 +606,10 @@ namespace Launchpad.Launcher.WindowsUI
 				SetLauncherMode(ELauncherMode.Launch, false);
 			}
 		}
-	}
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
